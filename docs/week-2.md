@@ -1,59 +1,40 @@
 Title Verification System - Week 2 Progress
 
+
 Overview
 
-In Week 2, we focused on refining the dataset further by addressing inconsistencies, removing duplicates, and ensuring data integrity. The primary goal was to achieve a fully cleaned dataset with standardized titles in both English and Hindi. This phase involved multiple iterations of cleaning, verification, and final validation to ensure high-quality data for the title verification system.
+In Week 2, we focused on deep cleaning and verifying the dataset to ensure accuracy and consistency. This involved detecting and removing special characters, handling missing values, and eliminating duplicate entries in both English and Hindi titles. The goal was to achieve a fully cleaned dataset for further processing in upcoming phases.
 
-Data Cleaning & Preprocessing
+Data Cleaning & Verification
+✅ 1. Special Character Removal
+Identified and removed unwanted special characters to ensure only valid English and Hindi text in titles.
+✅ 2. Handling Missing Values
+Detected and addressed missing values in the Cleaned Hindi Title column.
+Replaced missing values with appropriate placeholders to maintain data integrity.
+✅ 3. Duplicate Entry Removal
+Identified and removed duplicate records in both English and Hindi titles.
+Ensured each title appears only once in the cleaned dataset.
+Final Dataset Verification
+After completing the cleaning process, we performed a final quality check to confirm:
 
-1. Duplicate Handling
+✔ No missing values in any column.
+✔ No duplicate entries in English or Hindi titles.
+✔ No special characters or formatting issues.
+✔ Uniform formatting across all records.
+✔ Dataset is fully cleaned and ready for use. ✅
 
-Identified and removed duplicate rows to maintain unique entries.
-
-Found duplicate Hindi titles with slight variations in English counterparts and consolidated them.
-
-2. Special Character Removal
-
-Detected and removed non-Hindi characters from the Hindi Title column.
-
-Ensured only valid Devanagari script characters were retained in Hindi titles.
-
-3. Missing Value Handling
-
-Filled missing values in the "Cleaned Hindi Title" column using corresponding values from the "Hindi Title" column.
-
-Ensured no missing values were left in critical fields.
-
-4. Standardization & Formatting
-
-Lowercased all English titles to ensure uniformity.
-
-Trimmed unnecessary spaces and punctuation from both English and Hindi titles.
-
-Ensured consistent formatting across all cleaned titles.
-
-Final Verification & Results
-
-After multiple iterations, the dataset was validated against key quality checks:
-
-No missing values ✅
-
-No duplicate Hindi titles ✅
-
-No unwanted special characters ✅
-
-Uniform formatting for all titles ✅
-
-The final cleaned dataset was exported and is now ready for further processing in the title verification system.
+Summary of Week 2 Achievements
+✔ Special characters removed.
+✔ Missing values handled.
+✔ Duplicate titles eliminated.
+✔ Final dataset verified and confirmed clean.
 
 Next Steps (Week 3 and Beyond)
+In the upcoming weeks, we will:
 
-In the upcoming weeks, we aim to:
+🔹 Implement advanced text normalization techniques to enhance consistency.
+🔹 Develop title similarity detection using TF-IDF, Cosine Similarity, and phonetic matching.
+🔹 Begin API and frontend development for the system.
+🔹 Further refine the dataset based on domain-specific requirements.
 
-Implement advanced text normalization techniques to enhance accuracy.
-
-Develop similarity detection algorithms using TF-IDF, Cosine Similarity, and phonetic matching.
-
-Begin integrating the cleaned dataset into the verification system backend.
-
-With a fully cleaned and structured dataset, we are now well-prepared for the next phase of development!
+With a fully cleaned and structured dataset, we are now well-prepared to move forward with model development! 
