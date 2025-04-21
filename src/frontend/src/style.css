@@ -1,0 +1,178 @@
+/* 🌟 Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* 🚀 Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f4;
+  color: #2c3e50;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background: #1a1a1a;
+  color: #f4f4f4;
+}
+
+/* 📌 Centering the Main Container */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+/* 🌓 Dark Mode Card */
+.dark-mode .container {
+  background: #2c3e50;
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* 🔍 Title */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  transition: color 0.5s ease-in-out;
+}
+
+.dark-mode h1 {
+  color: #f4f4f4;
+}
+
+/* 📝 Subtitle */
+p {
+  font-size: 14px;
+  color: #7f8c8d;
+  transition: color 0.5s ease-in-out;
+}
+
+.dark-mode p {
+  color: #ddd;
+}
+
+/* ✏️ Input Box */
+input {
+  width: 90%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #3cb371;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #787878;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+.dark-mode input {
+  background: #333;
+  color: white;
+  border-color: #007bff;
+}
+
+/* ✅ Button */
+button {
+  width: 95%;
+  padding: 12px;
+  font-size: 16px;
+  background: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.dark-mode button {
+  background: #3498db;
+}
+
+.dark-mode button:hover {
+  background: #2980b9;
+}
+
+/* 🔹 Similarity Results */
+.result-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* 🎯 Each Result Row */
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #ecf0f1;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.result-row:hover {
+  background: #d5dbdb;
+}
+
+.dark-mode .result-row {
+  background: #34495e;
+}
+
+.dark-mode .result-row:hover {
+  background: #2c3e50;
+}
+
+/* 🎨 Similarity Score Colors */
+.similarity-score {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* 🚦 Message Styling */
+.message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.message.success {
+  color: #28a745;
+}
+
+.message.warning {
+  color: #ffc107;
+}
+
+.message.error {
+  color: #dc3545;
+}
+
+/* 🌙 Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.dark-mode .dark-mode-toggle {
+  color: #3498db;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Similarity Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: blue;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .result {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .unique {
+            background: lightgreen;
+            color: darkgreen;
+        }
+        .similar {
+            background: lightcoral;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Title Similarity Checker</h1>
+        <form method="POST">
+            <input type="text" name="title" placeholder="Enter your title..." required>
+            <br>
+            <button type="submit">Check Similarity</button>
+        </form>
+
+        {% if result %}
+            <div class="result {% if result.is_unique %}unique{% elif result.is_similar %}similar{% endif %}">
+                <strong>
+                    {% if result.is_unique %}
+                        ✅ Your title is unique!
+                    {% elif result.is_similar %}
+                        ⚠️ Your title is similar to an existing one.
+                    {% endif %}
+                </strong>
+            </div>
+
+            <h3>Results for: "{{ result.input_title }}"</h3>
+            <ul>
+                {% for match in result.top_matches %}
+                    <li>{{ match.title }} (Similarity Score: {{ match.score }}%)</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+
+</body>
+</html>
