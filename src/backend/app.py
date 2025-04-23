@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)  # ✅ Enable CORS globally
 
 # Load dataset
-df = pd.read_excel("E:\SEM Project\Major Project\Major Project\Guidelines_Enforced_Data(1).xlsx")
+df = pd.read_excel("Guidelines_Enforced_Data(1).xlsx")
 
 def find_similar_titles(input_title, top_n=5):
     similarities = [
