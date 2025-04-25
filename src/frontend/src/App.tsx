@@ -1,4 +1,4 @@
-import TitleChecker from "./components/ChekTitle";
+import TitleChecker from "./components/TItleChecker";
 import "./App.css";
 
 function App() {
