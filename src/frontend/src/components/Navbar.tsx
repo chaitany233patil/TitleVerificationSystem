@@ -12,10 +12,10 @@ const Navbar = () => {
         TitleGuard
       </div>
       <div className="flex gap-8">
-        <div className="text-gray-300 hover:text-white transition-colors cursor-pointer font-medium hover:underline">
+        <div className="text-gray-500 font-bold hover:text-white transition-colors cursor-pointer hover:underline">
           About
         </div>
-        <div className="text-gray-300 hover:text-white transition-colors cursor-pointer font-medium hover:underline">
+        <div className="text-gray-500 font-bold hover:text-white transition-colors cursor-pointer hover:underline">
           Model
         </div>
       </div>

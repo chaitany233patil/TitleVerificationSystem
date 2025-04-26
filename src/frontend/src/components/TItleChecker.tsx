@@ -44,6 +44,7 @@ const TitleChecker: React.FC = () => {
 
   return (
     <div className="body min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 px-4 pt-2 pb-9 flex flex-col items-center">
+      <div className="h-screen background-grid absolute w-full"></div>
       <Navbar />
       <div className="mt-13">
         <motion.div
@@ -81,7 +82,7 @@ const TitleChecker: React.FC = () => {
         className="flex items-center gap-4 mt-8"
       >
         <input
-          className="w-130 max-w-md p-3 rounded-md bg-transparent border border-gray-600 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition"
+          className="z-20 w-130 max-w-md p-3 rounded-md bg-transparent border border-gray-600 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition"
           type="text"
           placeholder="Enter your title..."
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
