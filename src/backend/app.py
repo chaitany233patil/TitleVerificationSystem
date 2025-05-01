@@ -18,7 +18,7 @@ def find_similar_titles(input_title, top_n=5):
     
     top_matches = [{"title": title, "score": round(score, 2)} for title, score in similarities[:top_n]]
     
-    is_unique = all(match["score"] < 60 for match in top_matches)  # Unique if all scores < 70%
+    is_unique = all(match["score"] < 60 for match in top_matches)  # Unique if all scores < 60%
 
     return {"input_title": input_title, "top_matches": top_matches, "isUnique": is_unique}
 
