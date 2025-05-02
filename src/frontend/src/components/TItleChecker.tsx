@@ -85,7 +85,7 @@ const TitleChecker: React.FC = () => {
           className="flex items-center gap-4 mt-8"
         >
           <input
-            className="z-20 w-130 max-w-md p-3 rounded-md bg-transparent border border-gray-600 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition"
+            className="z-20 md:w-130 max-w-md p-3 rounded-md bg-transparent border border-gray-600 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition"
             type="text"
             placeholder="Enter your title..."
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
